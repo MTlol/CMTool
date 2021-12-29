@@ -622,7 +622,9 @@ namespace ConceptMatrix.Views
 		private void Emote_Changed(object sender, RoutedPropertyChangedEventArgs<double?> e)
 		{
 			if (EmoteBox.Value.HasValue)
-				if (EmoteBox.Value <= 8800) CharacterDetails.Emote.value = (short)EmoteBox.Value;
+				// EDITED
+				// if (EmoteBox.Value <= 8800) CharacterDetails.Emote.value = (short)EmoteBox.Value;
+				CharacterDetails.Emote.value = (short)EmoteBox.Value;
 			EmoteBox.ValueChanged -= Emote_Changed;
 		}
 

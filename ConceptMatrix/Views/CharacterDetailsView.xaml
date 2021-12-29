@@ -319,7 +319,8 @@
 
 		<!-- Anim -->
 		<CheckBox IsChecked="{Binding CharacterDetails.Emote.freeze}" Content="{Binding Source={x:Static resx:UIStringsContent.ForceAnim}}" HorizontalAlignment="Left" Margin="545,375,0,0" VerticalAlignment="Top" Height="28"/>
-		<mah:NumericUpDown x:Name="EmoteBox" Maximum="8800" Minimum="1" Value="{Binding CharacterDetails.Emote.value, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="654,375,0,0" VerticalAlignment="Top" Width="115" Background="{x:Null}" BorderThickness="0,0,0,1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" TextAlignment="Right" NumericInputMode="Numbers" SourceUpdated="EmoteBox_SourceUpdated" Height="28" FontFamily="Segoe UI" FontSize="11.35"/>
+		<!-- EDITED -->
+		<mah:NumericUpDown x:Name="EmoteBox" Maximum="99999" Minimum="1" Value="{Binding CharacterDetails.Emote.value, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="654,375,0,0" VerticalAlignment="Top" Width="115" Background="{x:Null}" BorderThickness="0,0,0,1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" TextAlignment="Right" NumericInputMode="Numbers" SourceUpdated="EmoteBox_SourceUpdated" Height="28" FontFamily="Segoe UI" FontSize="11.35"/>
 		<Button x:Name="EmoteSearch" materialDesign:ShadowAssist.ShadowDepth="Depth3" Content="{Binding Source={x:Static resx:UIStringsContent.View}}" HorizontalAlignment="Left" Margin="773,375,0,0" VerticalAlignment="Top" Width="65" Height="28" Click="EmoteSearch_Click"/>
 		<!--<ToggleButton Name="EnableAnim" Margin="804,427,0,78" HorizontalAlignment="Left" Checked="EnableAnim_Checked" Unchecked="EnableAnim_Unchecked" />
 		<Label Content="Enable toggle for animations outside of&#xD;&#xA;GPose. You may also use inside of GPose&#xD;&#xA;if animations aren't working properly." Margin="545,408,316,57"/>
