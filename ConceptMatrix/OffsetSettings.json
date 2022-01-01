@@ -1,5 +1,5 @@
 {
-  "Version": "6.0.0.0",
+  "Version": "6.0.0.1",
   "Character": {
     "Name": "30",
     "ActorID": "74",
@@ -35,7 +35,7 @@
       "MuscleTone": "240,28,20,C",
       "TailSize": "148,74"
     },
-    "MovingTime": "1608",
+    "MovingTime": "1770",
     "Weather": "20",
     "ForceWeather": "27",
     "Music": "C0,116",
