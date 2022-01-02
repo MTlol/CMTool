@@ -309,13 +309,13 @@ namespace ConceptMatrix.Utility
                         m.writeBytes(GAS(c.Ear), CharacterDetails.Ear.GetBytes());
                         m.writeBytes(GAS(c.EarVa), CharacterDetails.EarVa.GetBytes());
                     }
-                    /* EDITED
+                    
                     if (CharacterDetails.Emote.freeze)
                     {
-                        if (CharacterDetails.Emote.value > 8800) CharacterDetails.Emote.value = 8800;
+                        // EDITED
+                        // if (CharacterDetails.Emote.value > 8800) CharacterDetails.Emote.value = 8800;
                         m.writeBytes(GAS(c.Emote), CharacterDetails.Emote.GetBytes());
                     }
-                    */
                     if (CharacterDetails.GposeMode == true)
                     {
                         CheckLinkedActors();
